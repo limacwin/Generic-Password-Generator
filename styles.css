@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Nunito:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono';
+    user-select: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #bf30d8;
+    /* Background CSS inspired from: https://codepen.io/praveenpuglia/pen/vNWpwO */
+    background-image: linear-gradient(45deg, transparent 20%, rgb(196, 196, 196) 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 20%, rgb(196, 196, 196) 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 75%, rgb(196, 196, 196) 80%, transparent 0),
+                    radial-gradient(rgb(196, 196, 196) 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+}
+
+.input-box {
+    position: relative;
+    width: 600px;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.input-box h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-box h1:hover {
+    color: #9c27b0;
+}
+
+.input-box input {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 20px 0 20px;
+    padding: 0 20px;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    border: none;
+    border: solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: #333;
+}
+
+.input-box input::placeholder {
+    letter-spacing: 0px;
+}
+
+.password-length {
+    max-width: 560px;
+}
+
+.password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    margin: 0 20px 20px;
+}
+
+.password input {
+    margin-right: 25px;
+}
+
+.password .text {
+    cursor: default;
+}
+
+.password button {
+    background: #f8f8f8;
+    border: none;
+    border-radius: 8px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password button:before {
+    content: "Copied!";
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    background: #9c27b0;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    display: none;
+}
+
+.password button:after {
+    content: "";
+    position: absolute;
+    top: 295px;
+    right: 85px;
+    width: 10px;
+    height: 10px;
+    background-color: #9c27b0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.password.active button:before,
+.password.active button:after {
+    display: block;
+}
+
+.fa-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px;
+    padding: 16.5px 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.fa-copy:hover {
+    background: #9c27b0;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.copy:before {
+    content: "Copied!";
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    background: #9c27b0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #fff;
+    display: none;
+}
+
+.input-box #btn {
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.input-box #btn:hover {
+    background: #9c27b0;
+}
+
+.links {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #ff0000;
+}
+
+.links .tree a:hover {
+    color: rgb(0, 199, 50);
+}
+
+.links p {
+    margin: 7px;
+}

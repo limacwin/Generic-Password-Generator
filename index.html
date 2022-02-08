@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://kit.fontawesome.com/b6868a5e32.js" crossorigin="anonymous"></script>
+    <title>🔐 Password Generator</title>
+</head>
+<body>
+    <div class="input-box">
+        <h1> \&lt; Random Password Generator &gt;/ </h1>
+        <input type="text" class="password-length" placeholder="Enter password length (default: 16)" id="password_length">
+        <div class="password">
+            <input type="text" class="text" placeholder="Your password (read only)" id="password" readonly>
+            <button id="copy-text" onclick="copyText();" title="Copy to clipboard">
+                <i class="far fa-copy fa-2x"></i>
+            </button>
+        </div>
+        <div id="btn" onclick="getPassword();" title="Generate password">
+            Generate Password
+        </div>
+    </div>
+    <div class="links">
+        <p>
+            CSS Background Inspiration: <a href="https://codepen.io/praveenpuglia/pen/vNWpwO" target="_blank">Click me! 💙</a>
+        </p>
+        <p class="tree">
+            Check this -> <a href="https://my-url-tree.netlify.app" target="_blank">My URL Tree 🌲</a>
+        </p>
+    </div>
+</body>
+</html>
