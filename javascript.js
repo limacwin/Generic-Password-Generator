@@ -3,7 +3,7 @@ function getPassword() {
     var password_length = document.getElementById("password_length").value;
     if (password_length == "")
         password_length = 8;
-    else if (password_length < "8" || password_length > "128") {
+    else if (password_length < 8 || password_length > 128) {
         password_length = 8;
         alert("Password length too long, resetting to default. Enter a value between 8 and 128.");
     }
